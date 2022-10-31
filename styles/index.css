@@ -1,5 +1,3 @@
-/* le style dans ce fichier est le style général des éléments HTML
-Pas de class ni de id */
 @font-face {
   font-family: "comic";
   src: url("../fonts/comic.ttf") format("truetype");
@@ -16,9 +14,12 @@ Pas de class ni de id */
 body {
   font-family: "lato";
   background: rgba(2, 0, 36, 1);
-  min-width: 420px;
   max-width: 1520px;
   margin: auto;
+}
+.smallFlex {
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 720px) {
   header {
@@ -114,8 +115,7 @@ body {
   }
   section small {
     background-color: rgb(209, 209, 209);
-    width: 100%;
-    margin: 2%;
+    margin: 1%;
     color: black;
     padding: 5px;
     border-radius: 6px;
@@ -219,8 +219,7 @@ body {
   }
   section small {
     background-color: rgb(209, 209, 209);
-    width: 100%;
-    margin: 2%;
+    margin: 1%;
     color: black;
     padding: 5px;
     border-radius: 6px;
@@ -325,8 +324,7 @@ body {
   }
   section small {
     background-color: rgb(209, 209, 209);
-    width: 100%;
-    margin: 2%;
+    margin: 1%;
     color: black;
     padding: 5px;
     border-radius: 6px;
