@@ -1,0 +1,265 @@
+/* le style dans ce fichier est le style général des éléments HTML
+Pas de class ni de id */
+@font-face {
+  font-family: "comic";
+  src: url("../fonts/comic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/lato.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "lato";
+  background: rgba(2, 0, 36, 1);
+  min-width: 420px;
+  max-width: 1520px;
+  margin: auto;
+}
+@media screen and (max-width: 720px) {
+  header {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    font-family: "lato";
+    border: 1px solid white;
+    height: 75px;
+  }
+  header h1 {
+    font-family: "comic";
+    font-size: 3.2rem;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+  }
+  header h2 {
+    font-family: "lato";
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+  }
+  nav {
+    position: absolute;
+    top: 30%;
+    background: rgba(2, 0, 36, 1);
+    width: 5%;
+    font-family: "lato";
+  }
+  nav button {
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    font-family: "comic";
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  section {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
+    color: white;
+    border: 1px solid white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 20px 20px 20px 40px;
+    font-size: 1.1rem;
+  }
+  section div a img {
+    width: 15%;
+  }
+  section span {
+    background-color: rgb(29, 185, 217);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: double white 6px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  header {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    font-family: "lato";
+    border: 1px solid white;
+    height: 75px;
+  }
+  header h1 {
+    font-family: "comic";
+    font-size: 3.2rem;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+  }
+  header h2 {
+    font-family: "lato";
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+  }
+  nav {
+    position: absolute;
+    top: 30%;
+    background: rgba(2, 0, 36, 1);
+    width: 5%;
+    font-family: "lato";
+  }
+  nav button {
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    font-family: "comic";
+    font-size: 3.2rem;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  section {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
+    color: white;
+    border: 1px solid white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 20px 20px 20px 40px;
+    font-size: 1.2rem;
+  }
+  section div a img {
+    width: 12%;
+    margin: 2%;
+  }
+  section span {
+    background-color: rgb(29, 185, 217);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: double white 6px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 5000px) {
+  header {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    font-family: "lato";
+    border: 1px solid white;
+    height: 75px;
+  }
+  header h1 {
+    font-family: "comic";
+    font-size: 3.2rem;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+  }
+  header h2 {
+    font-family: "lato";
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+  }
+  nav {
+    position: absolute;
+    top: 20%;
+    background: rgba(2, 0, 36, 1);
+    width: 5%;
+    font-family: "lato";
+  }
+  nav button {
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    font-family: "comic";
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
+  section {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
+    color: white;
+    border: 1px solid white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    padding: 20px 20px 20px 40px;
+    font-size: 1.5rem;
+  }
+  section div a img {
+    width: 10%;
+    margin: 2%;
+  }
+  section span {
+    background-color: rgb(29, 185, 217);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: double white 6px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    font-size: 2.1rem;
+  }
+}
