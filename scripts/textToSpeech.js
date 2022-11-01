@@ -11,10 +11,11 @@ Allbuttons.forEach((button) => {
 
     for (let i = 0; i < voice.length; i++) {
       if (voice[i].lang == "en-US") {
-        voice = synth.getVoices()[i];
+        voice = voice[i];
+        voice.getDefault;
+        console.log(voice);
         textReading.voice = voice;
         synth.speak(textReading);
-        console.log(voice);
       }
     }
   });
