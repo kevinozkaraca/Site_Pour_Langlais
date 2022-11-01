@@ -20,10 +20,12 @@ Allbuttons.forEach((button) => {
         textReading.voice = voice;
         textReading.lang = "en-US";
         textReading.text = e.target.innerText;
-        textReading.pitch = 1;
-        textReading.rate = 1;
-        textReading.volume = 100;
+        textReading.pitch = 1.0;
+        textReading.rate = 1.0;
+        textReading.volume = 1.0;
         textReading.voice = voice;
+        textReading.voiceURI = "Google US English";
+        console.log(voice);
         synth.speak(textReading);
       }
     }
