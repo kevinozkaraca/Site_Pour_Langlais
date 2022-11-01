@@ -12,6 +12,5 @@ Allbuttons.forEach((button) => {
     voice.lang = "en-US";
     textReading.voice = voice;
     synth.speak(textReading);
-    console.log(voice.lang);
   });
 });
