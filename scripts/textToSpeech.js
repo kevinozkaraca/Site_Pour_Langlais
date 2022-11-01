@@ -9,9 +9,7 @@ Allbuttons.forEach((button) => {
     let textReading = new SpeechSynthesisUtterance(e.target.innerText);
     synth.getVoices()[10].default = true;
     voice = synth.getVoices()[10];
-    voice.default = true;
     voice.lang = "en-US";
-
     textReading.voice = voice;
     synth.speak(textReading);
     console.log(voice.lang);

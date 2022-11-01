@@ -114,7 +114,7 @@ body {
     font-size: 1rem;
   }
   section small {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(233, 235, 184);
     margin: 1%;
     color: black;
     padding: 5px;
@@ -218,7 +218,7 @@ body {
     font-size: 1.9rem;
   }
   section small {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(233, 235, 184);
     margin: 1%;
     color: black;
     padding: 5px;
@@ -323,10 +323,10 @@ body {
     font-size: 2.1rem;
   }
   section small {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(233, 235, 184);
     margin: 1%;
     color: black;
-    padding: 5px;
+    padding: 6px;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
