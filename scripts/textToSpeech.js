@@ -2,7 +2,8 @@ const Allbuttons = document.querySelectorAll("#textToSpeech");
 let synth = speechSynthesis,
   isSpeaking = true,
   getLang = "en-US",
-  lang = "en-US";
+  lang = "en-US",
+  getdefault = true;
 
 Allbuttons.forEach((button) => {
   button.addEventListener("click", (e) => {
@@ -10,7 +11,6 @@ Allbuttons.forEach((button) => {
     textButton = e.target.innerHTML;
     let textReading = new SpeechSynthesisUtterance(e.target.innerText);
     voice = synth.getVoices();
-    console.log(voice);
     for (let i = 0; i < voice.length; i++) {
       if (voice[i].name == "Google US English") {
         voice = voice[i];
@@ -24,8 +24,10 @@ Allbuttons.forEach((button) => {
         textReading.rate = 1.0;
         textReading.volume = 1.0;
         textReading.voice = voice;
+        textReading.voice.default = true;
+
         textReading.voiceURI = "Google US English";
-        console.log(voice);
+        console.log(textReading);
         synth.speak(textReading);
       }
     }
