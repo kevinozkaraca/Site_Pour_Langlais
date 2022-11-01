@@ -1,6 +1,8 @@
 const Allbuttons = document.querySelectorAll("#textToSpeech");
 let synth = speechSynthesis,
-  isSpeaking = true;
+  isSpeaking = true,
+  getLang = "en-US",
+  lang = "en-US";
 
 Allbuttons.forEach((button) => {
   button.addEventListener("click", (e) => {
@@ -8,8 +10,40 @@ Allbuttons.forEach((button) => {
     textButton = e.target.innerHTML;
     let textReading = new SpeechSynthesisUtterance(e.target.innerText);
     voice = synth.getVoices();
+    console.log(voice);
+    for (let i = 0; i < voice.length; i++) {
+      if (voice[i].name == "Google US English") {
+        voice = voice[i];
+        voice.default = voice[i];
+        voicelocalService = false;
+        voice["default"] = true;
+        textReading.voice = voice;
+        textReading.lang = "en-US";
+        textReading.text = e.target.innerText;
+        textReading.pitch = 1;
+        textReading.rate = 1;
+        textReading.volume = 100;
+        textReading.voice = voice;
+        synth.speak(textReading);
+      }
+    }
+  });
+});
+
+/*
+Allbuttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    textButton = e.target.innerHTML;
+    let textReading = new SpeechSynthesisUtterance(e.target.innerText);
+    voice = synth.getVoices()[10];
     textReading.lang = "en-US";
-    console.log(textReading);
+    textReading.text = e.target.innerText;
+    textReading.pitch = 1;
+    textReading.rate = 1;
+    textReading.volume = 100;
+    textReading.voice = voice;
     synth.speak(textReading);
   });
 });
+*/
