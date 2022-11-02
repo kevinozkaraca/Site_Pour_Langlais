@@ -77,11 +77,11 @@ body {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
     color: white;
     border: 1px solid white;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-    padding: 20px 20px 20px 40px;
+    padding: 10px 10px 10px 40px;
     font-size: 1.1rem;
   }
   section div a img {
@@ -123,6 +123,10 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
+  }
+  section img {
+    width: 100%;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 721px) and (max-width: 1024px) {
@@ -229,6 +233,10 @@ body {
     align-items: center;
     font-size: 1rem;
   }
+  section img {
+    width: 100%;
+    cursor: pointer;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 5000px) {
   header {
@@ -334,5 +342,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+  }
+  section img {
+    width: 100%;
+    cursor: pointer;
   }
 }
