@@ -110,7 +110,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-    padding: 5px 5px 5px 5px;
+    padding: 0px 5px 0px 5px;
     font-size: 1.1rem;
   }
   article a {
@@ -153,6 +153,9 @@ body {
   article img {
     width: 100%;
     cursor: pointer;
+    border-radius: 5px;
+    filter: contrast(190%);
+    filter: saturate(120%);
   }
 }
 @media screen and (min-width: 721px) and (max-width: 1024px) {
