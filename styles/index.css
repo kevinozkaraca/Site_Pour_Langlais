@@ -153,8 +153,7 @@ body {
   article img {
     width: 100%;
     cursor: pointer;
-    filter: contrast(180%);
-    filter: sepia(90%);
+    filter: contrast(150%);
   }
 }
 @media screen and (min-width: 721px) and (max-width: 1024px) {
@@ -289,9 +288,6 @@ body {
     width: 100%;
     cursor: pointer;
     filter: contrast(150%);
-  }
-  article img:hover {
-    transform: scale(2.5);
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 5000px) {
