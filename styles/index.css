@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "comic";
-  src: url("../fonts/comic.ttf") format("truetype");
+  font-family: "western";
+  src: url("../fonts/docktrin.ttf") format("truetype");
 }
 @font-face {
-  font-family: "lato";
-  src: url("../fonts/lato.ttf") format("truetype");
+  font-family: "action";
+  src: url("../fonts/action.ttf") format("truetype");
 }
 * {
   margin: 0;
@@ -12,415 +12,155 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "lato";
+  font-family: "action";
   background: rgba(2, 0, 36, 1);
-  max-width: 1520px;
   margin: auto;
+  max-width: 1450px;
 }
+/* 
+      ---- Style du header ---
+*/
+header {
+  background: yellow;
+  margin-top: 30px;
+  width: 100%;
+  font-family: "action";
+}
+header h1 {
+  font-family: "western";
+  color: red;
+  font-size: 3.5rem;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+}
+header h2 {
+  font-family: "action";
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 0;
+  text-align: center;
+  color: red;
+}
+/* 
+      ---- Style de la barre de navigation ---
+*/
+nav {
+  font-family: "action";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 7px;
+}
+nav a {
+  width: 15%;
+  padding-top: 10px;
+  color: white;
+  font-family: "western";
+  cursor: pointer;
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  text-decoration: none;
+  border: solid white 5px;
+}
+/* 
+      ---- Style de la page d'accueil ---
+*/
+section {
+  color: black;
+  border: 10px double black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  padding: 15px;
+  font-size: 1.1rem;
+  background-color: white;
+}
+section div a img {
+  width: 14%;
+}
+section a {
+  width: 15%;
+  margin: auto;
+  display: inline;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+/* 
+      ---- Style des titres des pages, story et unit ---
+*/
+article {
+  color: black;
+  border: 10px double black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1.1rem;
+  background-color: white;
+}
+article a {
+  font-family: "western";
+  background-color: rgb(24, 172, 24);
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 10px 0px 0px 0px;
+  border-radius: 5px;
+  border: double rgb(20, 68, 20) 6px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+article button {
+  font-family: "action";
+  background-color: rgb(0, 50, 216);
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: double white 6px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+article small {
+  background-color: rgba(9, 9, 121, 1);
+  margin: 1%;
+  color: white;
+  border: solid white 1px;
+  padding: 5px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+article img {
+  width: 100%;
+  cursor: pointer;
+  filter: contrast(150%);
+}
+
+/* 
+      ---- Style du vocabulaire ---
+*/
 .smallFlex {
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 720px) {
-  header {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
-    width: 100%;
-    font-family: "lato";
-    border: 1px solid white;
-    height: 75px;
-  }
-  header h1 {
-    font-family: "comic";
-    font-size: 3.2rem;
-    font-weight: 100;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 2px 1px black;
-  }
-  header h2 {
-    font-family: "lato";
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 2px 1px black;
-  }
-  nav a {
-    width: 15%;
-    height: 60px;
-  }
-  nav {
-    position: absolute;
-    top: 75px;
-    background: rgba(2, 0, 36, 1);
-    width: 100%;
-    font-family: "lato";
-    display: flex;
-    margin-left: 5%;
-    flex-wrap: wrap;
-  }
-  nav button {
-    color: white;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
-    font-family: "comic";
-    font-size: 2rem;
-    font-weight: 200;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: 60px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-  section {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
-    color: white;
-    border: 1px solid white;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    padding: 10px 10px 10px 40px;
-    font-size: 1.1rem;
-  }
-  section div a img {
-    width: 15%;
-  }
-  section a {
-    width: 15%;
-    margin: auto;
-    display: inline;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-  }
-  article {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
-    color: white;
-    border: 1px solid white;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    padding: 0px 5px 0px 5px;
-    font-size: 1.1rem;
-  }
-  article a {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  article button {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  article small {
-    background-color: rgba(9, 9, 121, 1);
-    margin: 1%;
-    color: white;
-    border: solid white 1px;
-    padding: 5px;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-  }
-  article img {
-    width: 100%;
-    cursor: pointer;
-    filter: contrast(150%);
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  header {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
-    width: 100%;
-    font-family: "lato";
-    border: 1px solid white;
-    height: 75px;
-  }
-  header h1 {
-    font-family: "comic";
-    font-size: 3.2rem;
-    font-weight: 100;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 2px 1px black;
-  }
-  header h2 {
-    font-family: "lato";
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 2px 1px black;
-  }
-  nav {
-    position: absolute;
-    top: 30%;
-    background: rgba(2, 0, 36, 1);
-    width: 5%;
-    font-family: "lato";
-  }
-  nav button {
-    color: white;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
-    font-family: "comic";
-    font-size: 3.2rem;
-    font-weight: 200;
-    text-align: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-  section {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
-    color: white;
-    border: 1px solid white;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    padding: 20px 20px 20px 40px;
-    font-size: 1.2rem;
-  }
-  section div a img {
-    width: 12%;
-    margin: 2%;
-  }
-  section a {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 1.9rem;
-  }
-  article {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
-    color: white;
-    border: 1px solid white;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    padding: 20px 20px 20px 40px;
-    font-size: 1.2rem;
-  }
-  article a {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 1.9rem;
-  }
-  article button {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 1.9rem;
-  }
-  article small {
-    background-color: rgba(9, 9, 121, 1);
-    margin: 1%;
-    color: white;
-    border: solid white 1px;
-    padding: 5px;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-  }
-  article img {
-    width: 100%;
-    cursor: pointer;
-    filter: contrast(150%);
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 5000px) {
-  header {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
-    width: 100%;
-    font-family: "lato";
-    border: 1px solid white;
-    height: 75px;
-  }
-  header h1 {
-    font-family: "comic";
-    font-size: 3.2rem;
-    font-weight: 100;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 2px 1px black;
-  }
-  header h2 {
-    font-family: "lato";
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 2px 1px black;
-  }
-  nav {
-    position: absolute;
-    top: 20%;
-    background: rgba(2, 0, 36, 1);
-    width: 5%;
-    font-family: "lato";
-  }
-  nav button {
-    color: white;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
-    font-family: "comic";
-    font-size: 3.5rem;
-    font-weight: 200;
-    text-align: center;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-  section {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
-    color: white;
-    border: 1px solid white;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    padding: 20px 20px 20px 40px;
-    font-size: 1.5rem;
-  }
-  section div a img {
-    width: 10%;
-    margin: 3%;
-  }
-  section a {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 2.1rem;
-  }
-  article {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
-    color: white;
-    border: 1px solid white;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    padding: 20px 20px 20px 40px;
-    font-size: 1.5rem;
-  }
-  article a {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 2.1rem;
-  }
-  article button {
-    background-color: rgb(29, 185, 217);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    border: double white 6px;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-    font-size: 2.1rem;
-  }
-  article small {
-    background-color: rgba(9, 9, 121, 1);
-    margin: 1%;
-    color: white;
-    border: solid white 1px;
-    padding: 6px;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-  }
-  article img {
-    width: 100%;
-    cursor: pointer;
-    filter: contrast(150%);
-  }
 }
