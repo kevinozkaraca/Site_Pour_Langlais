@@ -55,10 +55,12 @@ body {
   }
   nav {
     position: absolute;
-    top: 30%;
+    top: 65px;
     background: rgba(2, 0, 36, 1);
-    width: 5%;
+    width: 100%;
     font-family: "lato";
+    display: flex;
+    flex-wrap: wrap;
   }
   nav button {
     color: white;
@@ -77,11 +79,11 @@ body {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgb(29, 185, 217) 100%);
     color: white;
     border: 1px solid white;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-    padding: 10px 10px 10px 40px;
+
     font-size: 1.1rem;
   }
   section div a img {
@@ -236,6 +238,8 @@ body {
   section img {
     width: 100%;
     cursor: pointer;
+    filter: contrast(110%);
+    filter: saturate(120%);
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 5000px) {
