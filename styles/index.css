@@ -96,11 +96,11 @@ body {
     margin-right: auto;
     border-radius: 5px;
     padding: 15px;
-    font-size: 1.1rem;
     background-color: white;
   }
   section p {
     padding: 2px;
+    font-size: 1.2rem;
   }
   section div {
     display: flex;
@@ -153,10 +153,7 @@ body {
   }
   article button {
     font-family: "action";
-    background-image: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: rgb(121, 90, 22);
     width: 100%;
     margin: auto;
     display: block;
@@ -168,8 +165,14 @@ body {
     cursor: pointer;
     font-size: 1.5rem;
   }
+  article p {
+    border: solid white 3px;
+    border-radius: 6px;
+    margin: 3px;
+    background-color: rgb(39, 81, 109);
+  }
   article small {
-    background-color: rgb(110, 78, 9);
+    background-color: rgb(39, 81, 109);
     margin: 1%;
     color: white;
     border: solid white 1px;
