@@ -21,13 +21,14 @@ body {
       ---- Style du header ---
 */
 header {
-  background-image: url("../images/fond.jpg");
-  background-position: center;
+  background-image: url("../images/fond1.jpg");
+  background-position: inherit;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100%;
-  margin-top: 30px;
+  background-color: white;
   width: 100%;
   font-family: "action";
+  height: 150px;
 }
 header h1 {
   font-family: "western";
@@ -138,20 +139,23 @@ article a {
 }
 article button {
   font-family: "action";
-  background-color: rgb(23, 38, 87);
+  background-image: url("../images/wood.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 100%;
   margin: auto;
   display: block;
   padding: 10px;
   border-radius: 5px;
-  border: double white 6px;
   color: white;
-  text-shadow: 0px 0px 5px black;
+  border: double rgb(68, 53, 20) 6px;
+  text-shadow: 0px 0px 7px black;
   cursor: pointer;
   font-size: 1.5rem;
 }
 article small {
-  background-color: rgba(9, 9, 121, 1);
+  background-color: rgb(110, 78, 9);
   margin: 1%;
   color: white;
   border: solid white 1px;
