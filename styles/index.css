@@ -347,7 +347,7 @@ body {
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   article img {
     width: 100%;
@@ -407,6 +407,8 @@ body {
     ---- Style de la barre de navigation ---
 */
   nav {
+    width: 70%;
+    margin: auto;
     font-family: "action";
     display: flex;
     flex-wrap: wrap;
@@ -517,7 +519,7 @@ body {
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   article img {
     width: 100%;

@@ -7,7 +7,6 @@ Allimages.forEach((image) => {
   image.addEventListener("click", (e) => {
     e.preventDefault();
     textimage = e.target.alt;
-    console.log(e.target.alt);
     let textReading = new SpeechSynthesisUtterance(textimage);
     voicelocalService = false;
     textReading.voice = voice;
