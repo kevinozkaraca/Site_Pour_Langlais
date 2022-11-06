@@ -138,12 +138,8 @@ body {
     background-color: white;
   }
   article a {
-    background-image: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
     font-family: "western";
-    background-color: rgb(3, 69, 112);
+    background-color: rgb(112, 3, 3);
     width: 100%;
     margin: auto;
     display: block;
@@ -184,7 +180,7 @@ body {
     margin: 1%;
     color: white;
     border: solid white 1px;
-    padding: 0px 6px 6px 6px;
+    padding: 3px;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
@@ -319,12 +315,8 @@ body {
     background-color: white;
   }
   article a {
-    background-image: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
     font-family: "western";
-    background-color: rgb(3, 69, 112);
+    background-color: rgb(112, 3, 3);
     width: 100%;
     margin: auto;
     display: block;
@@ -369,7 +361,7 @@ body {
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   article img {
     width: 100%;
@@ -501,12 +493,8 @@ body {
     background-color: white;
   }
   article a {
-    background-image: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
     font-family: "western";
-    background-color: rgb(3, 69, 112);
+    background-color: rgb(112, 3, 3);
     width: 100%;
     margin: auto;
     display: block;
@@ -541,6 +529,7 @@ body {
     border-radius: 6px;
     margin: 3px;
     background-color: rgb(255, 255, 255);
+    font-size: 1.8rem;
   }
   article small {
     background-color: rgb(39, 81, 109);
@@ -551,7 +540,7 @@ body {
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   article img {
     width: 100%;
