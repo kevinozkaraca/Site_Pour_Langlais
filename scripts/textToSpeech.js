@@ -3,6 +3,7 @@ let synth = speechSynthesis,
   isSpeaking = true;
 let voice = synth.getVoices()[10];
 
+// Lecture du contentu HTML
 Allbuttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();

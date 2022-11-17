@@ -3,6 +3,7 @@ let synth = speechSynthesis,
   isSpeaking = true;
 let voice = synth.getVoices()[10];
 
+// Lecture de la description alternative
 Allimages.forEach((image) => {
   image.addEventListener("click", (e) => {
     e.preventDefault();

@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "western";
-  src: url("../fonts/docktrin.ttf") format("truetype");
+  font-family: "grafiti1";
+  src: url("../fonts/grafiti1.ttf") format("truetype");
 }
 @font-face {
-  font-family: "action";
-  src: url("../fonts/action.ttf") format("truetype");
+  font-family: "grafiti2";
+  src: url("../fonts/grafiti2.ttf") format("truetype");
 }
 * {
   margin: 0;
@@ -18,540 +18,176 @@ body {
   max-width: 2000px;
 }
 
-@media all and (max-width: 720px) {
-  /* 
+/* 
       ---- Style du header ---
 */
-  header {
-    background-image: url("../images/fond1.jpg");
-    background-position: inherit;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: white;
-    width: 100%;
-    font-family: "action";
-    height: 150px;
-    border: 10px double black;
-    border-radius: 5px;
-  }
-  header h1 {
-    font-family: "western";
-    color: red;
-    font-size: 3.5rem;
-    font-weight: 100;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding-top: 15px;
-    padding-left: 10%;
-    text-align: center;
-    text-shadow: 2px 0px 3px black;
-  }
-  header h2 {
-    font-family: "action";
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: red;
-    text-shadow: 2px 0px 3px black;
-  }
-  h3 {
-    padding: 5px;
-  }
-  h4 {
-    padding: 4;
-  }
-  /* 
+header {
+  background-color: rgb(177, 43, 43);
+  width: 100%;
+  font-family: "action";
+  height: 150px;
+  border: 10px double black;
+  border-radius: 5px;
+}
+header h1 {
+  font-family: "grafiti1";
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  letter-spacing: -0.5rem;
+}
+header h2 {
+  font-family: "grafiti2";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 0;
+  text-align: center;
+  color: red;
+  text-shadow: 2px 0px 3px black;
+}
+h3 {
+  padding: 5px;
+}
+h4 {
+  padding: 4;
+}
+/* 
       ---- Style de la barre de navigation ---
 */
-  nav {
-    font-family: "action";
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  nav a {
-    width: 15%;
-    height: 45px;
-    color: white;
-    padding-top: 1px;
-    font-family: "western";
-    cursor: pointer;
-    font-size: 35px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    text-decoration: none;
-    border: solid white 5px;
-    justify-content: center;
-    text-justify: unset;
-  }
-  /* 
+nav {
+  font-family: "action";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+nav a {
+  width: 15%;
+  height: 45px;
+  color: white;
+  font-family: "grafiti2";
+  cursor: pointer;
+  font-size: 35px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 90px;
+  text-decoration: none;
+  border: solid white 5px;
+  justify-content: center;
+  text-justify: unset;
+}
+/* 
       ---- Style de la page d'accueil ---
 */
-  section {
-    color: black;
-    border: 10px double black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 15px;
-    background-color: white;
-  }
-  section p {
-    padding: 2px;
-    font-size: 1.2rem;
-  }
-  section div {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  section div a img {
-    width: 100%;
-  }
-  section a {
-    width: 15%;
-    margin: auto;
-    display: inline;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-  }
-  /* 
+section {
+  color: black;
+  border: 10px double black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: white;
+}
+section p {
+  padding: 2px;
+  font-size: 1.2rem;
+}
+section div {
+  display: flex;
+  flex-wrap: wrap;
+}
+section div a img {
+  width: 100%;
+}
+section a {
+  width: 15%;
+  margin: auto;
+  display: inline;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+/* 
       ---- Style des titres des pages, story et unit ---
 */
-  article {
-    color: black;
-    border: 10px double black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 1.1rem;
-    background-color: white;
-  }
-  article a {
-    font-family: "western";
-    background-color: rgb(112, 3, 3);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px 0px 0px 0px;
-    border-radius: 5px;
-    border: double rgb(0, 0, 0) 6px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 2px 0px 3px black;
-  }
-  article button {
-    font-family: "action";
-    background-color: rgb(8, 0, 114);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    border: double rgb(255, 255, 255) 6px;
-    text-shadow: 0px 0px 7px black;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  article p {
-    border: double black 3px;
-    color: black;
-    text-shadow: none;
-    border-radius: 6px;
-    margin: 3px;
-    background-color: rgb(255, 255, 255);
-  }
-  article small {
-    background-color: rgb(39, 81, 109);
-    margin: 1%;
-    color: white;
-    border: solid white 1px;
-    padding: 3px;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-  }
-  article img {
-    width: 100%;
-    cursor: pointer;
-    filter: contrast(150%);
-  }
+article {
+  color: black;
+  border: 10px double black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.1rem;
+  background-color: white;
+}
+article a {
+  font-family: "western";
+  background-color: rgb(112, 3, 3);
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 10px 0px 0px 0px;
+  border-radius: 5px;
+  border: double rgb(0, 0, 0) 6px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 2px 0px 3px black;
+}
+article button {
+  font-family: "action";
+  background-color: rgb(8, 0, 114);
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  border: double rgb(255, 255, 255) 6px;
+  text-shadow: 0px 0px 7px black;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+article p {
+  border: double black 3px;
+  color: black;
+  text-shadow: none;
+  border-radius: 6px;
+  margin: 3px;
+  background-color: rgb(255, 255, 255);
+}
+article small {
+  background-color: rgb(39, 81, 109);
+  margin: 1%;
+  color: white;
+  border: solid white 1px;
+  padding: 3px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+article img {
+  width: 100%;
+  cursor: pointer;
+  filter: contrast(150%);
+}
 
-  /* 
+/* 
       ---- Style du vocabulaire ---
 */
-  .smallFlex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media all and (min-width: 721px) and (max-width: 1030px) {
-  /* 
-      ---- Style du header ---
-  */
-  header {
-    background-image: url("../images/fond1.jpg");
-    background-position: inherit;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: white;
-    width: 100%;
-    font-family: "action";
-    height: 150px;
-    border: 10px double black;
-    border-radius: 5px;
-  }
-  header h1 {
-    font-family: "western";
-    color: red;
-    font-size: 3.2rem;
-    font-weight: 100;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding-top: 15px;
-    text-align: center;
-    text-shadow: 2px 0px 3px black;
-  }
-  header h2 {
-    font-family: "action";
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: red;
-    text-shadow: 2px 0px 3px black;
-  }
-  h3 {
-    padding: 5px;
-  }
-  h4 {
-    padding: 4;
-  }
-  /* 
-    ---- Style de la barre de navigation ---
-*/
-  nav {
-    font-family: "action";
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  nav a {
-    width: 15%;
-    height: 45px;
-    color: white;
-    font-family: "western";
-    cursor: pointer;
-    font-size: 35px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    text-decoration: none;
-    border: solid white 5px;
-    justify-content: center;
-    text-justify: unset;
-  }
-  /* 
-    ---- Style de la page d'accueil ---
-*/
-  section {
-    color: black;
-    border: 10px double black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 1.5rem;
-    background-color: white;
-  }
-  section div {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  section div a img {
-    width: 100%;
-  }
-  section a {
-    width: 15%;
-    margin: auto;
-    display: inline;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-  }
-  /* 
-    ---- Style des titres des pages, story et unit ---
-*/
-  article {
-    color: black;
-    border: 10px double black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 1.1rem;
-    background-color: white;
-  }
-  article a {
-    font-family: "western";
-    background-color: rgb(112, 3, 3);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px 0px 0px 0px;
-    border-radius: 5px;
-    border: double rgb(0, 0, 0) 6px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 2px 0px 3px black;
-  }
-  article button {
-    font-family: "action";
-    background-color: rgb(8, 0, 114);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    border: double rgb(255, 255, 255) 6px;
-    text-shadow: 0px 0px 7px black;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  article p {
-    border: double black 3px;
-    color: black;
-    text-shadow: none;
-    border-radius: 6px;
-    margin: 3px;
-    background-color: rgb(255, 255, 255);
-  }
-  article small {
-    background-color: rgb(39, 81, 109);
-    margin: 1%;
-    color: white;
-    border: solid white 1px;
-    padding: 0px 6px 6px 6px;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-  }
-  article img {
-    width: 100%;
-    cursor: pointer;
-    filter: contrast(150%);
-  }
-  /* 
-    ---- Style du vocabulaire ---
-*/
-  .smallFlex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media all and (min-width: 1031px) and (max-width: 5010px) {
-  /* 
-      ---- Style du header ---
-  */
-  header {
-    background-image: url("../images/fond1.jpg");
-    background-position: inherit;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: white;
-    width: 100%;
-    font-family: "action";
-    border: 10px double black;
-    border-radius: 5px;
-  }
-  header h1 {
-    font-family: "western";
-    color: red;
-    font-size: 5rem;
-    font-weight: 100;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding-top: 15px;
-    text-align: center;
-    text-shadow: 2px 0px 3px black;
-  }
-  header h2 {
-    font-family: "action";
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding: 0;
-    text-align: center;
-    color: red;
-    text-shadow: 2px 0px 3px black;
-  }
-  h3 {
-    padding: 5px;
-  }
-  h4 {
-    padding: 4;
-  }
-  /* 
-    ---- Style de la barre de navigation ---
-*/
-  nav {
-    width: 70%;
-    margin: auto;
-    font-family: "action";
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  nav a {
-    width: 15%;
-    height: 45px;
-    color: white;
-    font-family: "western";
-    cursor: pointer;
-    font-size: 35px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    text-decoration: none;
-    border: solid white 5px;
-    justify-content: center;
-    text-justify: unset;
-  }
-  /* 
-    ---- Style de la page d'accueil ---
-*/
-  section {
-    color: black;
-    border: 10px double black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 1.5rem;
-    background-color: white;
-  }
-  section div {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  section div a img {
-    width: 100%;
-  }
-  section a {
-    width: 9%;
-    margin: auto;
-    display: inline;
-    color: white;
-    text-shadow: 0px 0px 5px black;
-    cursor: pointer;
-  }
-  /* 
-    ---- Style des titres des pages, story et unit ---
-*/
-  article {
-    color: black;
-    border: 10px double black;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 1.1rem;
-    background-color: white;
-  }
-  article a {
-    font-family: "western";
-    background-color: rgb(112, 3, 3);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px 0px 0px 0px;
-    border-radius: 5px;
-    border: double rgb(0, 0, 0) 6px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 2px 0px 3px black;
-  }
-  article button {
-    font-family: "action";
-    background-color: rgb(8, 0, 114);
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    border: double rgb(255, 255, 255) 6px;
-    text-shadow: 0px 0px 7px black;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  article p {
-    border: double black 3px;
-    color: black;
-    text-shadow: none;
-    border-radius: 6px;
-    margin: 3px;
-    background-color: rgb(255, 255, 255);
-    font-size: 1.8rem;
-  }
-  article small {
-    background-color: rgb(39, 81, 109);
-    margin: 1%;
-    color: white;
-    border: solid white 1px;
-    padding: 0px 6px 6px 6px;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-  }
-  article img {
-    width: 100%;
-    cursor: pointer;
-    filter: contrast(150%);
-  }
-  /* 
-    ---- Style du vocabulaire ---
-*/
-  .smallFlex {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.smallFlex {
+  display: flex;
+  flex-wrap: wrap;
 }
