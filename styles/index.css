@@ -6,6 +6,10 @@
   font-family: "grafiti2";
   src: url("../fonts/grafiti2.ttf") format("truetype");
 }
+@font-face {
+  font-family: "action";
+  src: url("../fonts/action.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@
 }
 body {
   font-family: "action";
-  background: rgba(2, 0, 36, 1);
+  background: rgb(45, 39, 143);
   margin: auto;
   max-width: 2000px;
 }
@@ -25,20 +29,26 @@ header {
   background-color: rgb(177, 43, 43);
   width: 100%;
   font-family: "action";
-  height: 150px;
-  border: 10px double black;
   border-radius: 5px;
 }
 header h1 {
   font-family: "grafiti1";
   color: rgb(255, 255, 255);
-  font-size: 4rem;
+  font-size: 10vw;
   font-weight: 100;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   text-align: center;
   letter-spacing: -0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+header h1 div {
+  color: black;
 }
 header h2 {
   font-family: "grafiti2";
@@ -79,7 +89,7 @@ nav a {
   background-color: rgb(0, 0, 0);
   border-radius: 90px;
   text-decoration: none;
-  border: solid white 5px;
+
   justify-content: center;
   text-justify: unset;
 }
