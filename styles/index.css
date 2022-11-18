@@ -44,7 +44,7 @@ header h1 {
   margin-right: auto;
   width: 100%;
   text-align: center;
-  letter-spacing: -0.7rem;
+  letter-spacing: -1.8vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -94,7 +94,7 @@ section {
 }
 section p {
   padding: 2px;
-  font-size: 1.2rem;
+  font-size: 2.8vh;
 }
 section div {
   display: flex;
@@ -126,7 +126,7 @@ article {
   margin-right: auto;
   border-radius: 5px;
   padding: 5px;
-  font-size: 1.1rem;
+  font-size: 2.3vh;
   background-color: white;
   transform: translate(0px, -35px);
 }
@@ -140,16 +140,16 @@ article h4 {
 }
 article a {
   font-family: "grafiti2";
-  background-color: rgb(112, 3, 3);
+  background-color: rgb(30, 48, 128);
   width: 100%;
   margin: auto;
   display: block;
   padding: 10px 0px 0px 0px;
   border-radius: 5px;
-  border: double rgb(0, 0, 0) 6px;
+  border: double rgb(255, 255, 255) 6px;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 5.1vh;
   text-align: center;
   text-decoration: none;
   text-shadow: 2px 0px 3px black;
@@ -166,7 +166,7 @@ article button {
   border: double rgb(255, 255, 255) 6px;
   text-shadow: 0px 0px 7px black;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2.8vh;
 }
 article section {
   font-family: "action";
@@ -179,7 +179,7 @@ article section {
   color: white;
   border: double rgb(255, 255, 255) 6px;
   text-shadow: 0px 0px 7px black;
-  font-size: 1.8rem;
+  font-size: 2.8vh;
   cursor: pointer;
   transform: translate(0px, 5px);
 }
@@ -201,7 +201,7 @@ article small {
   border-radius: 6px;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 2vh;
 }
 article img {
   width: 100%;
