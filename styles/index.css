@@ -29,7 +29,7 @@ body {
 /*  voir le fichier h1Zindex.css pour les effets sur le h1*/
 header {
   background-image: url("../images/headerBackground.jpg");
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: rgb(0, 0, 0);
@@ -44,7 +44,7 @@ header h1 {
   margin-right: auto;
   width: 100%;
   text-align: center;
-  letter-spacing: -1.5vh;
+  letter-spacing: -0.5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
