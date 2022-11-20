@@ -719,6 +719,10 @@ body {
     font-size: 3rem;
     background-color: white;
     transform: translate(0px, -20px);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   article h3 {
     margin: 4px;
@@ -784,19 +788,19 @@ body {
   }
   article small {
     background-color: rgb(39, 81, 109);
-    margin: 1%;
     color: white;
     border: solid white 1px;
-    padding: 3px;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    margin: auto;
   }
   article img {
-    width: 100%;
+    width: 80%;
     cursor: pointer;
     filter: contrast(150%);
+    margin: auto;
   }
   /* 
       ---- Style du vocabulaire ---
