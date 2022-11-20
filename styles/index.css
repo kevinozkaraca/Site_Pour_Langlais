@@ -19,199 +19,790 @@ body {
   font-family: "action";
   background: rgb(0, 0, 0);
   margin: auto;
-  max-width: 2000px;
+  max-width: 1600px;
 }
 
-/* 
+@media screen and (max-width: 765px) {
+  /* 
       ---- Style du header ---
           Header - H1 - H2 
 */
-/*  voir le fichier h1Zindex.css pour les effets sur le h1*/
-header {
-  background-image: url("../images/headerBackground.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-}
-header h1 {
-  font-family: "grafiti1";
-  color: rgb(255, 255, 255);
-  font-size: 14vw;
-  font-weight: 100;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
-  letter-spacing: -0.5vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-/* 
+  /*  voir le fichier h1Zindex.css pour les effets sur le h1*/
+  header {
+    background-image: url("../images/headerBackground.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  }
+  header h1 {
+    font-family: "grafiti1";
+    color: rgb(255, 255, 255);
+    font-size: 14vw;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -0.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  /* 
       ---- Style de la barre de navigation ---
       nav - a - section
 */
-nav {
-  font-family: "action";
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  z-index: -10;
-}
-nav a {
-  width: 13%;
-  font-family: "grafiti2";
-  cursor: pointer;
-  font-size: 10vw;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: rgb(30, 48, 128);
-  border-radius: 0px;
-  text-decoration: none;
-  justify-content: center;
-  text-justify: unset;
-  box-shadow: 0px 0px 17px rgb(255, 255, 255);
-  transform: translate(0px, -20px);
-  border: 5px double rgb(255, 252, 252);
-}
-/* 
+  nav {
+    font-family: "action";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: -10;
+  }
+  nav a {
+    width: 13%;
+    font-family: "grafiti2";
+    cursor: pointer;
+    font-size: 10vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 48, 128);
+    border-radius: 0px;
+    text-decoration: none;
+    justify-content: center;
+    text-justify: unset;
+    box-shadow: 0px 0px 17px rgb(255, 255, 255);
+    transform: translate(0px, -15px);
+    border: 5px double rgb(255, 252, 252);
+  }
+  /* 
       ---- Style de la page d'accueil ---
 */
-section {
-  color: black;
-  border: 10px double black;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  padding: 15px;
-  background-color: white;
-  transform: translate(0px, -35px);
-}
-section p {
-  padding: 2px;
-  font-size: 2.2vh;
-}
-section div {
-  display: flex;
-  flex-wrap: wrap;
-}
-section img {
-  width: 100%;
-}
-section div a img {
-  width: 100%;
-}
-section a {
-  width: 15%;
-  margin: auto;
-  display: inline;
-  color: white;
-  text-shadow: 0px 0px 5px black;
-  cursor: pointer;
-}
-/* 
+  section {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    transform: translate(0px, -20px);
+  }
+  section p {
+    padding: 2px;
+    font-size: 2.6vh;
+  }
+  section div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section img {
+    width: 100%;
+  }
+  section div a img {
+    width: 100%;
+  }
+  section a {
+    width: 15%;
+    margin: auto;
+    display: inline;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+  }
+  /* 
       ---- Style des titres des pages, story et unit ---
 */
 
-article {
-  color: black;
-  border: 10px double black;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 2vh;
-  background-color: white;
-  transform: translate(0px, -35px);
-}
-article h3 {
-  margin: 4px;
-  padding: 2px;
-}
-article h4 {
-  margin: 4px;
-  padding: 2px;
-}
-article a {
-  font-family: "grafiti2";
-  background-color: rgb(30, 48, 128);
-  width: 100%;
-  margin: auto;
-  display: block;
-  padding: 10px 0px 0px 0px;
-  border-radius: 5px;
-  border: double rgb(255, 255, 255) 6px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  font-size: 3.8vh;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 2px 0px 3px black;
-}
-article button {
-  font-family: "action";
-  background-color: rgb(8, 0, 114);
-  width: 100%;
-  margin: auto;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  border: double rgb(255, 255, 255) 6px;
-  text-shadow: 0px 0px 7px black;
-  cursor: pointer;
-  font-size: 2.8vh;
-}
-article section {
-  font-family: "action";
-  background-color: rgb(8, 0, 114);
-  width: 100%;
-  margin: auto;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  border: double rgb(255, 255, 255) 6px;
-  text-shadow: 0px 0px 7px black;
-  font-size: 2.8vh;
-  cursor: pointer;
-  transform: translate(0px, 5px);
-}
-article p {
-  border: double black 3px;
-  color: black;
-  text-shadow: none;
-  border-radius: 6px;
-  margin: 3px;
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-article small {
-  background-color: rgb(39, 81, 109);
-  margin: 1%;
-  color: white;
-  border: solid white 1px;
-  padding: 3px;
-  border-radius: 6px;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vh;
-}
-article img {
-  width: 100%;
-  cursor: pointer;
-  filter: contrast(150%);
-}
-/* 
+  article {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 2vh;
+    background-color: white;
+    transform: translate(0px, -20px);
+  }
+  article h3 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article h4 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article a {
+    font-family: "grafiti2";
+    background-color: rgb(30, 48, 128);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px 0px 0px 0px;
+    border-radius: 5px;
+    border: double rgb(255, 255, 255) 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 3.8vh;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 0px 3px black;
+  }
+  article button {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    cursor: pointer;
+    font-size: 2.8vh;
+  }
+  article section {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    font-size: 2.8vh;
+    cursor: pointer;
+    transform: translate(0px, 5px);
+  }
+  article p {
+    border: double black 3px;
+    color: black;
+    text-shadow: none;
+    border-radius: 6px;
+    margin: 3px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  article small {
+    background-color: rgb(39, 81, 109);
+    margin: 1%;
+    color: white;
+    border: solid white 1px;
+    padding: 3px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+  }
+  article img {
+    width: 100%;
+    cursor: pointer;
+    filter: contrast(150%);
+  }
+  /* 
       ---- Style du vocabulaire ---
 */
-.smallFlex {
-  display: flex;
-  flex-wrap: wrap;
+  .smallFlex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 959px) {
+  /* 
+      ---- Style du header ---
+          Header - H1 - H2 
+*/
+  /*  voir le fichier h1Zindex.css pour les effets sur le h1*/
+  header {
+    background-image: url("../images/headerBackground.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  }
+  header h1 {
+    font-family: "grafiti1";
+    color: rgb(255, 255, 255);
+    font-size: 14vw;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -0.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  /* 
+      ---- Style de la barre de navigation ---
+      nav - a - section
+*/
+  nav {
+    font-family: "action";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: -10;
+  }
+  nav a {
+    width: 13%;
+    font-family: "grafiti2";
+    cursor: pointer;
+    font-size: 6vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 48, 128);
+    border-radius: 0px;
+    text-decoration: none;
+    justify-content: center;
+    text-justify: unset;
+    box-shadow: 0px 0px 17px rgb(255, 255, 255);
+    transform: translate(0px, -15px);
+    border: 5px double rgb(255, 252, 252);
+  }
+  /* 
+      ---- Style de la page d'accueil ---
+*/
+  section {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    transform: translate(0px, -20px);
+  }
+  section p {
+    padding: 2px;
+    font-size: 2.6vh;
+  }
+  section div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section img {
+    width: 100%;
+  }
+  section div a img {
+    width: 100%;
+  }
+  section a {
+    width: 15%;
+    margin: auto;
+    display: inline;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+  }
+  /* 
+      ---- Style des titres des pages, story et unit ---
+*/
+
+  article {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 2vh;
+    background-color: white;
+    transform: translate(0px, -20px);
+  }
+  article h3 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article h4 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article a {
+    font-family: "grafiti2";
+    background-color: rgb(30, 48, 128);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px 0px 0px 0px;
+    border-radius: 5px;
+    border: double rgb(255, 255, 255) 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 3.8vh;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 0px 3px black;
+  }
+  article button {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    cursor: pointer;
+    font-size: 2.8vh;
+  }
+  article section {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    font-size: 2.8vh;
+    cursor: pointer;
+    transform: translate(0px, 5px);
+  }
+  article p {
+    border: double black 3px;
+    color: black;
+    text-shadow: none;
+    border-radius: 6px;
+    margin: 3px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  article small {
+    background-color: rgb(39, 81, 109);
+    margin: 1%;
+    color: white;
+    border: solid white 1px;
+    padding: 3px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+  }
+  article img {
+    width: 100%;
+    cursor: pointer;
+    filter: contrast(150%);
+  }
+  /* 
+      ---- Style du vocabulaire ---
+*/
+  .smallFlex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 960px) and (max-width: 1200px) {
+  /* 
+      ---- Style du header ---
+          Header - H1 - H2 
+*/
+  /*  voir le fichier h1Zindex.css pour les effets sur le h1*/
+  header {
+    background-image: url("../images/headerBackground.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+  }
+  header h1 {
+    font-family: "grafiti1";
+    color: rgb(255, 255, 255);
+    font-size: 14vw;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -0.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  /* 
+      ---- Style de la barre de navigation ---
+      nav - a - section
+*/
+  nav {
+    font-family: "action";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: -10;
+  }
+  nav a {
+    width: 13%;
+    font-family: "grafiti2";
+    cursor: pointer;
+    font-size: 6vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 48, 128);
+    border-radius: 0px;
+    text-decoration: none;
+    justify-content: center;
+    text-justify: unset;
+    box-shadow: 0px 0px 17px rgb(255, 255, 255);
+    transform: translate(0px, -15px);
+    border: 5px double rgb(255, 252, 252);
+  }
+  /* 
+      ---- Style de la page d'accueil ---
+*/
+  section {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    transform: translate(0px, -20px);
+  }
+  section p {
+    padding: 2px;
+    font-size: 2.6vh;
+  }
+  section div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section img {
+    width: 100%;
+  }
+  section div a img {
+    width: 100%;
+  }
+  section a {
+    width: 15%;
+    margin: auto;
+    display: inline;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+  }
+  /* 
+      ---- Style des titres des pages, story et unit ---
+*/
+
+  article {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 2vh;
+    background-color: white;
+    transform: translate(0px, -20px);
+  }
+  article h3 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article h4 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article a {
+    font-family: "grafiti2";
+    background-color: rgb(30, 48, 128);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px 0px 0px 0px;
+    border-radius: 5px;
+    border: double rgb(255, 255, 255) 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 3.8vh;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 0px 3px black;
+  }
+  article button {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    cursor: pointer;
+    font-size: 2.8vh;
+  }
+  article section {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    font-size: 2.8vh;
+    cursor: pointer;
+    transform: translate(0px, 5px);
+  }
+  article p {
+    border: double black 3px;
+    color: black;
+    text-shadow: none;
+    border-radius: 6px;
+    margin: 3px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  article small {
+    background-color: rgb(39, 81, 109);
+    margin: 1%;
+    color: white;
+    border: solid white 1px;
+    padding: 3px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+  }
+  article img {
+    width: 100%;
+    cursor: pointer;
+    filter: contrast(150%);
+  }
+  /* 
+      ---- Style du vocabulaire ---
+*/
+  .smallFlex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1201px) {
+  /* 
+      ---- Style du header ---
+          Header - H1 - H2 
+*/
+  /*  voir le fichier h1Zindex.css pour les effets sur le h1*/
+  header {
+    background-image: url("../images/headerBackground.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 1600px;
+  }
+  header h1 {
+    font-family: "grafiti1";
+    color: rgb(255, 255, 255);
+    font-size: 10rem;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  /* 
+      ---- Style de la barre de navigation ---
+      nav - a - section
+*/
+  nav {
+    font-family: "action";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: -10;
+    max-width: 1600px;
+  }
+  nav a {
+    width: 13%;
+    font-family: "grafiti2";
+    cursor: pointer;
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 48, 128);
+    border-radius: 0px;
+    text-decoration: none;
+    justify-content: center;
+    text-justify: unset;
+    box-shadow: 0px 0px 17px rgb(255, 255, 255);
+    transform: translate(0px, -15px);
+    border: 5px double rgb(255, 252, 252);
+  }
+  /* 
+      ---- Style de la page d'accueil ---
+*/
+  section {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    transform: translate(0px, -20px);
+    max-width: 1200px;
+  }
+  section p {
+    padding: 2px;
+    font-size: 2.5rem;
+  }
+  section div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section img {
+    width: 100%;
+  }
+  section div a img {
+    width: 100%;
+  }
+  section a {
+    width: 15%;
+    margin: auto;
+    display: inline;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+  }
+  /* 
+      ---- Style des titres des pages, story et unit ---
+*/
+
+  article {
+    color: black;
+    border: 10px double black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 3rem;
+    background-color: white;
+    transform: translate(0px, -20px);
+  }
+  article h3 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article h4 {
+    margin: 4px;
+    padding: 2px;
+  }
+  article a {
+    font-family: "grafiti2";
+    background-color: rgb(30, 48, 128);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px 0px 0px 0px;
+    border-radius: 5px;
+    border: double rgb(255, 255, 255) 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 0px 3px black;
+  }
+  article button {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    cursor: pointer;
+    font-size: 2.5rem;
+  }
+  article section {
+    font-family: "action";
+    background-color: rgb(8, 0, 114);
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: double rgb(255, 255, 255) 6px;
+    text-shadow: 0px 0px 7px black;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transform: translate(0px, 5px);
+  }
+  article p {
+    border: double black 3px;
+    color: black;
+    text-shadow: none;
+    border-radius: 6px;
+    margin: 3px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  article small {
+    background-color: rgb(39, 81, 109);
+    margin: 1%;
+    color: white;
+    border: solid white 1px;
+    padding: 3px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  article img {
+    width: 100%;
+    cursor: pointer;
+    filter: contrast(150%);
+  }
+  /* 
+      ---- Style du vocabulaire ---
+*/
+  .smallFlex {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
