@@ -684,7 +684,7 @@ body {
   }
   section p {
     padding: 2px;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   section div {
     display: flex;
@@ -716,7 +716,7 @@ body {
     margin-right: auto;
     border-radius: 5px;
     padding: 5px;
-    font-size: 3rem;
+    font-size: 1.8rem;
     background-color: white;
     transform: translate(0px, -20px);
     margin: auto;
