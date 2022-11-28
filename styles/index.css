@@ -715,7 +715,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 1.8rem;
     background-color: white;
     transform: translate(0px, -20px);
@@ -738,7 +739,6 @@ body {
     width: 100%;
     margin: auto;
     display: block;
-    padding: 10px 0px 0px 0px;
     border-radius: 5px;
     border: double rgb(255, 255, 255) 6px;
     color: rgb(255, 255, 255);
@@ -790,11 +790,12 @@ body {
     background-color: rgb(39, 81, 109);
     color: white;
     border: solid white 1px;
-    border-radius: 6px;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     margin: auto;
+    padding: 0.7rem;
   }
   article img {
     width: 80%;
