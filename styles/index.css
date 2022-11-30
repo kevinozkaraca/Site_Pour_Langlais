@@ -391,7 +391,7 @@ body {
   }
   article small {
     background-color: rgb(39, 81, 109);
-    margin: 1%;
+    margin: 2px;
     color: white;
     border: solid white 1px;
     padding: 3px;
@@ -411,6 +411,8 @@ body {
   .smallFlex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 960px) and (max-width: 1200px) {
@@ -586,7 +588,7 @@ body {
   }
   article small {
     background-color: rgb(39, 81, 109);
-    margin: 1%;
+    margin: 5px;
     color: white;
     border: solid white 1px;
     padding: 3px;
