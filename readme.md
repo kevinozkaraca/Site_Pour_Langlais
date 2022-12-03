@@ -1,42 +1,6 @@
-## Site d'apprentissage de l'anglais :
+# Site d'apprentissage de l'anglais :
 
-A voir ici : https://kevinozkaraca.github.io/Site_Pour_Langlais/
-
-## Explication du code CSS :
-
-header ---> entete du site
-
-<div>
-        <img
-            class="IMGlink"
-            src="imagesReadme/001.jpg"
-            width="95%"
-        />
-</div>
-nav       --->  barre de navigation
-<div>
-        <img
-            class="IMGlink"
-            src="imagesReadme/002.jpg"
-            width="95%"
-        />
-</div>
-section   --->  information en page d'accueil
-<div>
-        <img
-            class="IMGlink"
-            src="imagesReadme/003.jpg"
-            width="95%"
-        />
-</div>
-article   --->  page ou se trouve les
-<div>
-        <img
-            class="IMGlink"
-            src="imagesReadme/004.jpg"
-            width="95%"
-        />
-</div>
+A voir ici : https://kevinozkaraca.github.io/Site_Pour_Langlais
 
 ## Mes reseaux sociaux :
 

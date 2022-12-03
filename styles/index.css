@@ -795,9 +795,9 @@ body {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: auto;
-    padding: 0.7rem;
+    padding: 0.3rem;
   }
   article img {
     width: 80%;
