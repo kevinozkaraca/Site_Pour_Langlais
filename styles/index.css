@@ -726,6 +726,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 1200px;
   }
   article h3 {
     margin: 4px;
