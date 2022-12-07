@@ -91,7 +91,7 @@ body {
     border-radius: 5px;
     padding: 15px;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 5px;
   }
   section p {
     padding: 2px;
@@ -129,7 +129,7 @@ body {
     padding: 5px;
     font-size: 2vh;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 10px;
   }
   article h3 {
     margin: 4px;
@@ -287,7 +287,7 @@ body {
     border-radius: 5px;
     padding: 15px;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 5px;
   }
   section p {
     padding: 2px;
@@ -325,7 +325,7 @@ body {
     padding: 5px;
     font-size: 2vh;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 10px;
   }
   article h3 {
     margin: 4px;
@@ -484,7 +484,7 @@ body {
     border-radius: 5px;
     padding: 15px;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 5px;
   }
   section p {
     padding: 2px;
@@ -522,7 +522,7 @@ body {
     padding: 5px;
     font-size: 2vh;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 10px;
   }
   article h3 {
     margin: 4px;
@@ -681,7 +681,7 @@ body {
     border-radius: 5px;
     padding: 15px;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 5px;
     max-width: 1200px;
   }
   section p {
@@ -721,7 +721,7 @@ body {
     padding-right: 10px;
     font-size: 1.8rem;
     background-color: white;
-    transform: translate(0px, -20px);
+    margin-top: 10px;
     margin: auto;
     align-items: center;
     justify-content: center;
