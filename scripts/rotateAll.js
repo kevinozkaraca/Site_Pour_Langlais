@@ -29,6 +29,6 @@ AllParagraf.forEach(() => {
 
 AllIMG.forEach(() => {
   for (let i = 0; i < AllIMG.length; i++) {
-    AllIMGf[i].style.transform = `rotate(${maFunctionRandom()}deg)`;
+    AllIMG[i].style.transform = `rotate(${maFunctionRandom()}deg)`;
   }
 });
